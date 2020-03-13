@@ -2,30 +2,24 @@
 
 > 基于pdfjs-dist的移动端pdf预览组件
 
-## Project setup
+## Install
+```bash
+npm install @lichunshan/pdf-preview
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
+## Usage
+在项目的main.js引入入下面代码全局注册组件
+```JavaScript
+import pdfPreview from '@lichunshan/pdf-preview'
+import '@lichunshan/pdf-preview/dist/pdf-preview.common.vendors~pdfjsWorker.js'
+import '@lichunshan/pdf-preview/dist/pdf-preview.css'
+import '@lichunshan/pdf-preview/src/assets/iconfont.css'
+Vue.use(pdfPreview);
 ```
 
-### Lints and fixes files
+在.vue文件中使用
+
 ```
-npm run lint
+<pdf-preview src=""></pdf-preview>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+src为pdf文件路径

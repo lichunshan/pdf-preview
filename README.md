@@ -1,6 +1,6 @@
 # pdf-preview
 
-> 基于pdfjs-dist的移动端pdf预览组件
+> 基于pdfjs-dist的移动端vue pdf预览组件
 
 ## Install
 ```bash

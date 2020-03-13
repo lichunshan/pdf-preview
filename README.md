@@ -23,3 +23,13 @@ Vue.use(pdfPreview);
 ```
 
 src为pdf文件路径
+
+## Config
+
+#### 组件属性
+
+| 属性（prop） | 值（value：Boolean） | 描述（desc）    |
+| ------------ | -------------------- | --------------- |
+| toolbar      | default（true）      | 是否显示toolbar |
+| src          | default（''）        | pdf文件路径     |
+

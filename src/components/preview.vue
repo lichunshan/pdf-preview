@@ -6,7 +6,8 @@
      :totalPage="numPages"
      @zoom="zoom"
      @shrink="shrink"
-     :href="src"></toolbar>
+     :href="src"
+     :show="toolbar"></toolbar>
     <canvas ref="canvas" class="pdf_page" :style="{width: pageWidth + '%'}" v-for="(item, index) in numPages" :key="index"></canvas>
   </div>
 </template>
@@ -19,7 +20,11 @@ export default {
   props: {
     src: {
       type: String,
-      defalut: ''
+      default: ''
+    },
+    toolbar: {
+      type: Boolean,
+      default: true
     }
   },
   name: "pdf-preview",

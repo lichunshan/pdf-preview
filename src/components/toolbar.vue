@@ -1,5 +1,5 @@
 <template>
-  <div class="toolbar">
+  <div class="toolbar" v-if="show">
     <h1 class="toolbar__title"></h1>
     <span class="toolbar__pagetip">{{currentPage}}/{{totalPage}}</span>
     <ul class="toolbar__tools">
@@ -33,6 +33,10 @@ export default {
     href: {
       type: String,
       default: ''
+    },
+    show: {
+      type: Boolean,
+      default: true
     }
   },
   data() {

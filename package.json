@@ -1,5 +1,5 @@
 {
-  "name": "@lichunshan/pdf-preview",
+  "name": "pdf-preview",
   "version": "1.0.0",
   "description": "pdfjs-dist based mobile pdf preview component",
   "scripts": {

@@ -1,14 +1,18 @@
 {
   "name": "pdf-preview",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "pdfjs-dist based mobile pdf preview component",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:wc": "vue-cli-service build --target wc --name pdf-preview lib/index.js"
   },
+  "author": "lichunshan",
+  "main": "dist/pdf-preview.min.js",
   "dependencies": {
     "core-js": "^3.6.4",
+    "pdfjs-dist": "^2.2.228",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -37,5 +41,13 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "keywords": [
+    "vue",
+    "component",
+    "pdf",
+    "pdfjs-dist"
+  ],
+  "license": "MIT",
+  "homepage": ""
 }

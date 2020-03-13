@@ -1,5 +1,7 @@
 # pdf-preview
 
+> 基于pdfjs-dist的移动端pdf预览组件
+
 ## Project setup
 ```
 npm install
